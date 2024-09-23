@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow cleartext traffic for the local network (192.168.*.*) -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">192.168.0.28</domain> <!-- Your local IP -->
+    </domain-config>
+
+    <!-- Optional: Allow for localhost -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">localhost</domain>
+    </domain-config>
+
+    <!-- Optional: Allow all domains (use this cautiously) -->
+    <!--
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">*</domain>
+    </domain-config>
+    -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">m.media-amazon.com</domain>
+        <!-- Add more domains if necessary -->
+    </domain-config>
+</network-security-config>
