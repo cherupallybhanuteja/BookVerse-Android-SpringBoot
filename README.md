@@ -49,8 +49,11 @@ public static final String BASE_URL = "http://localhost:8080/api/v1/";
 ## API ENDPOINTS
 
 GET	- /api/v1/mangas - Retrieve all mangas
+
 GET	- /api/v1/mangas/{id} - Retrieve a manga by its ID
+
 POST - /api/v1/mangas - Create or update a manga
+
 DELETE - /api/v1/mangas/{id} - Delete a manga by its ID
 
 ## DEPLOYMENT
